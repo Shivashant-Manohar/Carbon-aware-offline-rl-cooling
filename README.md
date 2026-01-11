@@ -1,4 +1,3 @@
-```markdown
 # Carbon-Aware Offline Reinforcement Learning for Data Center Cooling
 
 ## Overview
@@ -14,7 +13,7 @@ This project proposes a **carbon-aware, physics-guided offline reinforcement lea
 - **Carbon-aware reward formulation** that incorporates time-varying grid carbon intensity
 - **Offline-only reinforcement learning** (no simulator or live system interaction)
 - **Physics-guided regularization** to enforce smooth and safe control behavior
-- Modular, reproducible **research codebase**
+- Modular, reproducible **research-grade codebase**
 - Applicable to data centers, HVAC systems, and smart building control
 
 ---
@@ -24,8 +23,6 @@ This project proposes a **carbon-aware, physics-guided offline reinforcement lea
 - Real-world cooling systems are **safety-critical**, making online RL impractical
 - Grid electricity carbon intensity fluctuates due to renewable and fossil fuel mix
 - Carbon-aware control enables **emission reduction without additional hardware**
-
-This project demonstrates how **Offline RL + sustainability-aware objectives** can enable responsible and deployable AI for real-world infrastructure.
 
 ---
 
@@ -72,8 +69,8 @@ Both algorithms operate strictly on **fixed historical datasets** and are suitab
 ---
 
 ## Project Structure
-```
 
+```text
 carbon-aware-offline-rl-cooling/
 ├── configs/          # YAML-based experiment configs
 ├── data/             # Raw and processed offline datasets
@@ -86,45 +83,3 @@ carbon-aware-offline-rl-cooling/
 ├── notebooks/        # Analysis and visualization
 ├── scripts/          # CLI entry points
 └── docs/             # Methodology and GSoC proposal
-
-````
-
----
-
-## How to Run (after implementation)
-
-### Training
-```bash
-python scripts/train.py --config experiments/exp_carbon_aware.yaml
-````
-
-### Evaluation
-
-```bash
-python scripts/evaluate.py --config experiments/exp_carbon_aware.yaml
-```
-
----
-
-## Research Context
-
-This project is inspired by recent advances in **offline reinforcement learning for data center cooling**, including physics-informed and safety-aware approaches validated in real-world deployments. Unlike prior work, this repository focuses on **carbon-aware optimization**, explicitly accounting for the environmental impact of electricity consumption.
-
----
-
-## Intended Use
-
-* Research project
-* Sustainable AI / Green AI experimentation
-* Offline RL benchmarking beyond toy environments
-* Smart buildings and HVAC optimization research
-
----
-
-## Disclaimer
-
-This project is **research-oriented** and does not directly control real-world infrastructure. Any deployment in production environments requires extensive validation and safety certification.
-
-```
-
----
