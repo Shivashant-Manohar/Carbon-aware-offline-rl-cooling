@@ -82,4 +82,6 @@ carbon-aware-offline-rl-cooling/
 ├── experiments/      # Experiment definitions
 ├── notebooks/        # Analysis and visualization
 ├── scripts/          # CLI entry points
-└── docs/             # Methodology and GSoC proposal
+└── docs/             # Methodology and technical documentation
+
+
